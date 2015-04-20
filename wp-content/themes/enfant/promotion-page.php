@@ -19,6 +19,7 @@ $the_query = new WP_Query( $args );
 
 // The Loop
 if ( $the_query->have_posts() ) {
+    ?> <h2>Promotion</h2> <?php
     echo '<ul>';
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
